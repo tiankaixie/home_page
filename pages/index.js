@@ -4,18 +4,14 @@ import {
     Container,
     Heading,
     Box,
-    SimpleGrid,
     Button,
     List,
     ListItem,
     useColorModeValue,
     chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
 import {
     IoLogoTwitter,
     IoLogoInstagram,
