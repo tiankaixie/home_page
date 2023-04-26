@@ -5,11 +5,9 @@ import {
     Link,
     Flex,
     Grid,
-    GridItem,
-    Divider
+    GridItem
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
 import NextLink from 'next/link'
 import {
     BioItemName,
