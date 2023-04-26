@@ -25,7 +25,7 @@ import {
     RefAff2
 } from '../components/bio'
 
-import { RxExternalLink } from 'react-icons/Rx'
+import { RxExternalLink } from 'react-icons'
 
 const CV = () => (
     <Layout title="CV">
