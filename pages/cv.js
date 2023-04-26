@@ -20,7 +20,11 @@ import {
     BioSub,
     PubVenue,
     PubAuthor,
-    PubTitle
+    PubTitle,
+    RefName,
+    RefTitle,
+    RefAff,
+    RefAff2
 } from '../components/bio'
 
 import { RxExternalLink } from 'react-icons/Rx'
@@ -259,6 +263,205 @@ const CV = () => (
                     <PubVenue>
                         IEEE Transactions on Visualization and Computer Graphics
                     </PubVenue>
+                </GridItem>
+            </Grid>
+
+            <Grid templateColumns="repeat(5, 1fr)" gap={4} mt={6}>
+                <GridItem colSpan={1}></GridItem>
+                <GridItem colSpan={4}>
+                    <Heading as="h3" variant="section-title">
+                        Invited Talks
+                    </Heading>
+                </GridItem>
+
+                <GridItem colSpan={1}>
+                    <BioYear>Oct. 2021</BioYear>
+                </GridItem>
+                <GridItem colSpan={4}>
+                    <PubTitle>
+                        FairRankVis: A Visual Analytics Framework for Exploring
+                        Algorithmic Fairness in Graph Mining Models
+                    </PubTitle>
+                    <PubVenue>
+                        IEEE Transactions on Visualization and Computer Graphics
+                        2021
+                    </PubVenue>
+                </GridItem>
+
+                <GridItem colSpan={1}>
+                    <BioYear>Oct. 2020</BioYear>
+                </GridItem>
+                <GridItem colSpan={4}>
+                    <PubTitle>
+                        Auditing the Sensitivity of Graph-based Ranking with
+                        Visual Analytics{' '}
+                    </PubTitle>
+                    <PubVenue>
+                        IEEE Transactions on Visualization and Computer Graphics
+                        2020
+                    </PubVenue>
+                </GridItem>
+
+                <GridItem colSpan={1}>
+                    <BioYear>Oct. 2019</BioYear>
+                </GridItem>
+                <GridItem colSpan={4}>
+                    <PubTitle>
+                        Explaining Vulnerabilities to Adversarial Machine
+                        Learning through Visual Analytics{' '}
+                    </PubTitle>
+                    <PubVenue>
+                        IEEE Transactions on Visualization and Computer Graphics
+                        2019
+                    </PubVenue>
+                </GridItem>
+            </Grid>
+
+            <Grid templateColumns="repeat(5, 1fr)" gap={4} mt={6}>
+                <GridItem colSpan={1}></GridItem>
+                <GridItem colSpan={4}>
+                    <Heading as="h3" variant="section-title">
+                        Professional Services
+                    </Heading>
+                </GridItem>
+
+                <GridItem colSpan={1}>
+                    <BioYear>2020 - 2023</BioYear>
+                </GridItem>
+                <GridItem colSpan={4}>
+                    <PubTitle>
+                        Reviewer of IEEE Transactions on Visualization and
+                        Computer Graphics
+                    </PubTitle>
+                </GridItem>
+
+                <GridItem colSpan={1}>
+                    <BioYear>2022</BioYear>
+                </GridItem>
+                <GridItem colSpan={4}>
+                    <PubTitle>
+                        Reviewer of IEEE Computer Graphics & Applications
+                    </PubTitle>
+                </GridItem>
+            </Grid>
+
+            <Grid templateColumns="repeat(5, 1fr)" gap={4} mt={6} mb={6}>
+                <GridItem colSpan={1}></GridItem>
+                <GridItem colSpan={4}>
+                    <Heading as="h3" variant="section-title">
+                        References
+                    </Heading>
+                </GridItem>
+
+                <GridItem colSpan={1}></GridItem>
+                <GridItem colSpan={4}>
+                    <RefName>Dr. Ross Maciejewski, </RefName>
+                    <RefTitle>Professor</RefTitle>
+                    <RefAff>
+                        The School of Computing and Augmented Intelligence
+                        (SCAI)
+                    </RefAff>
+                    <RefAff2>Arizona State University</RefAff2>
+                    <BioSub>
+                        <Flex pt={1}>
+                            <Box pt={1} mr={1}>
+                                <RxExternalLink />
+                            </Box>
+                            <Link
+                                as={NextLink}
+                                href="http://rmaciejewski.faculty.asu.edu"
+                            >
+                                <span>Homepage</span>
+                            </Link>{' '}
+                        </Flex>
+                    </BioSub>
+                </GridItem>
+
+                <GridItem colSpan={1}></GridItem>
+                <GridItem colSpan={4}>
+                    <RefName>Dr. Huan Liu, </RefName>
+                    <RefTitle>Professor</RefTitle>
+                    <RefAff>
+                        The School of Computing and Augmented Intelligence
+                        (SCAI)
+                    </RefAff>
+                    <RefAff2>Arizona State University</RefAff2>
+                    <BioSub>
+                        <Flex pt={1}>
+                            <Box pt={1} mr={1}>
+                                <RxExternalLink />
+                            </Box>
+                            <Link
+                                as={NextLink}
+                                href="https://www.public.asu.edu/~huanliu/"
+                            >
+                                <span>Homepage</span>
+                            </Link>{' '}
+                        </Flex>
+                    </BioSub>
+                </GridItem>
+                <GridItem colSpan={1}></GridItem>
+                <GridItem colSpan={4}>
+                    <RefName>Dr. Hanghang Tong, </RefName>
+                    <RefTitle>Associate Professor</RefTitle>
+                    <RefAff>Department of Computer Science</RefAff>
+                    <RefAff2>
+                        University of Illinois at Urbana-Champaign
+                    </RefAff2>
+                    <BioSub>
+                        <Flex pt={1}>
+                            <Box pt={1} mr={1}>
+                                <RxExternalLink />
+                            </Box>
+                            <Link as={NextLink} href="http://tonghanghang.org">
+                                <span>Homepage</span>
+                            </Link>{' '}
+                        </Flex>
+                    </BioSub>
+                </GridItem>
+                <GridItem colSpan={1}></GridItem>
+                <GridItem colSpan={4}>
+                    <RefName>Dr. Chris Bryan, </RefName>
+                    <RefTitle>Assistant Professor</RefTitle>
+                    <RefAff>
+                        The School of Computing and Augmented Intelligence
+                        (SCAI)
+                    </RefAff>
+                    <RefAff2>Arizona State University</RefAff2>
+                    <BioSub>
+                        <Flex pt={1}>
+                            <Box pt={1} mr={1}>
+                                <RxExternalLink />
+                            </Box>
+                            <Link
+                                as={NextLink}
+                                href="https://chrisbryan.github.io"
+                            >
+                                <span>Homepage</span>
+                            </Link>{' '}
+                        </Flex>
+                    </BioSub>
+                </GridItem>
+                <GridItem colSpan={1}></GridItem>
+                <GridItem colSpan={4}>
+                    <RefName>Dr. Yuxin Ma, </RefName>
+                    <RefTitle>Assistant Professor</RefTitle>
+                    <RefAff>
+                        Department of Computer Science and Engineering
+                    </RefAff>
+                    <RefAff2>
+                        Southern University of Science and Technology
+                    </RefAff2>
+                    <BioSub>
+                        <Flex pt={1}>
+                            <Box pt={1} mr={1}>
+                                <RxExternalLink />
+                            </Box>
+                            <Link as={NextLink} href="https://mayuxin.me">
+                                <span>Homepage</span>
+                            </Link>{' '}
+                        </Flex>
+                    </BioSub>
                 </GridItem>
             </Grid>
         </Container>

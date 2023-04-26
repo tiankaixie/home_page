@@ -194,7 +194,9 @@ const Page = () => {
                     </ListItem>
                 </List>
 
-                <SimpleGrid columns={[1, 2, 2]} gap={6}></SimpleGrid>
+                {/**
+        *
+        *
 
                 <Heading as="h3" variant="section-title">
                     Newsletter
@@ -215,6 +217,8 @@ const Page = () => {
                         Sign up my newsletter here
                     </Button>
                 </Box>
+        *
+        */}
             </Section>
         </Container>
     )

@@ -76,6 +76,7 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
+                    {/*
                     <LinkItem href="/publications" path={path}>
                         Publications
                     </LinkItem>
@@ -85,6 +86,7 @@ const Navbar = props => {
                     <LinkItem href="/projects" path={path}>
                         Projects
                     </LinkItem>
+                   */}
                     <LinkItem href="/cv" path={path}>
                         CV
                     </LinkItem>
@@ -102,26 +104,19 @@ const Navbar = props => {
                                 aria-label="Options"
                             />
                             <MenuList>
-                                <MenuItem as={MenuLink} href="/">
-                                    About
-                                </MenuItem>
-                                <MenuItem as={MenuLink} href="/works">
-                                    Works
-                                </MenuItem>
-                                <MenuItem as={MenuLink} href="/posts">
-                                    Posts
-                                </MenuItem>
-                                <MenuItem
-                                    as={MenuLink}
-                                    href="https://uses.craftz.dog/"
-                                >
-                                    Uses
-                                </MenuItem>
-                                <MenuItem
-                                    as={Link}
-                                    href="https://github.com/craftzdog/craftzdog-homepage"
-                                >
-                                    View Source
+                                {/*
+                    <MenuItem href="/publications" path={path}>
+                        Publications
+                    </MenuItem>
+                    <MenuItem href="/blog" path={path}>
+                        Blog
+                    </MenuItem>
+                    <MenuItem href="/projects" path={path}>
+                        Projects
+                    </MenuItem>
+                   */}
+                                <MenuItem as={MenuLink} href="/cv">
+                                    CV
                                 </MenuItem>
                             </MenuList>
                         </Menu>
